@@ -109,8 +109,8 @@ void FXDraw::drawPolygon(const glm::vec2* points, int32_t point_count, const glm
 	}
 }
 
-void FXDraw::drawCircle(const glm::vec2& center, float radius, const glm::vec4& color) {
-	const float segments = 24.f;
+void FXDraw::drawCircle(const glm::vec2& center, float radius, const glm::vec4& color, const float segments) {
+	//const float segments = 24.f;
 	const float increment = 2 * glm::pi<float>() / segments;
 
 	float sin_inc = glm::sin(increment);
@@ -139,8 +139,8 @@ void FXDraw::drawSolidPolygon(const glm::vec2* points, int32_t point_count, cons
 	}
 }
 
-void FXDraw::drawSolidCircle(const glm::vec2& center, float radius, const glm::vec4& color) {
-	const float segments = 24.f;
+void FXDraw::drawSolidCircle(const glm::vec2& center, float radius, const glm::vec4& color, const float segments) {
+	//const float segments = 24.f;
 	const float increment = 2 * glm::pi<float>() / segments;
 
 	float sin_inc = glm::sin(increment);

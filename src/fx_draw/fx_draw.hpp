@@ -57,11 +57,11 @@ class FXDraw {
 		void drawPolyLine(const glm::vec2* points, int32_t point_count, const glm::vec4& color);
 		// same as polyline, but connects first and last point
 		void drawPolygon(const glm::vec2* points, int32_t point_count, const glm::vec4& color);
-		void drawCircle(const glm::vec2& center, float radius, const glm::vec4& color);
+		void drawCircle(const glm::vec2& center, float radius, const glm::vec4& color, const float segments = 24.f);
 
 		// expects the first point to be in the middle, from which all tris start
 		void drawSolidPolygon(const glm::vec2* points, int32_t point_count, const glm::vec4& color);
-		void drawSolidCircle(const glm::vec2& center, float radius, const glm::vec4& color);
+		void drawSolidCircle(const glm::vec2& center, float radius, const glm::vec4& color, const float segments = 24.f);
 
 		void flushLines(void);
 		void flushTris(void);
