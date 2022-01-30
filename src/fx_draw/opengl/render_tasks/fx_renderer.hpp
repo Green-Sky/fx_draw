@@ -2,7 +2,7 @@
 
 #include <mm/opengl/render_task.hpp>
 
-#include "../fx_draw.hpp"
+#include "../../fx_draw.hpp"
 
 #include <string>
 //#include <memory>
@@ -14,7 +14,7 @@
 	//class VertexArrayObject;
 //}
 
-namespace fx_draw {
+namespace fx_draw::OpenGL::RenderTasks {
 
 class FXDrawRenderTask : public MM::OpenGL::RenderTask {
 	private:
@@ -31,5 +31,5 @@ class FXDrawRenderTask : public MM::OpenGL::RenderTask {
 		std::string target_fbo = "display";
 };
 
-} // fx_draw
+} // fx_draw::OpenGL::RenderTasks
 

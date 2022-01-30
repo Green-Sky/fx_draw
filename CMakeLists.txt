@@ -4,8 +4,8 @@ add_library(fx_draw
 	./src/fx_draw/fx_draw.hpp
 	./src/fx_draw/fx_draw.cpp
 
-	./src/fx_draw/render_tasks/fx_renderer.hpp
-	./src/fx_draw/render_tasks/fx_renderer.cpp
+	./src/fx_draw/opengl/render_tasks/fx_renderer.hpp
+	./src/fx_draw/opengl/render_tasks/fx_renderer.cpp
 
 	./src/fx_draw/components/fx_timer.hpp
 

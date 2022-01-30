@@ -6,9 +6,9 @@
 
 #include <mm/components/time_delta.hpp>
 
-namespace Systems::fx_draw {
+namespace fx_draw::Systems {
 
-void FXTimer(MM::Scene& scene, entt::view<entt::get_t<Components::fx_draw::fx_timer>> view, const MM::Components::TimeDelta& td);
+void fx_timer(MM::Scene& scene, entt::view<entt::get_t<Components::FXTimer>> view, const MM::Components::TimeDelta& td);
 
-} // Systems::fx_draw
+} // fx_draw::Systems
 

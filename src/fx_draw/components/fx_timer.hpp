@@ -1,11 +1,11 @@
 #pragma once
 
-namespace Components::fx_draw {
+namespace fx_draw::Components {
 
-struct fx_timer {
+struct FXTimer {
 	float duration = 0.f;
 	float remaining = 0.f;
 };
 
-} // Components::fx_draw
+} // fx_draw::Components
 

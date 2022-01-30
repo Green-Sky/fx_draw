@@ -3,14 +3,14 @@
 #include <glm/vec2.hpp>
 #include <glm/vec4.hpp>
 
-namespace Components::fx_draw {
+namespace fx_draw::Components {
 
-struct simple_line {
+struct SimpleLine {
 	glm::vec2 p1;
 	glm::vec2 p2;
 
 	glm::vec4 color{1,1,1,1};
 };
 
-} // Components::fx_draw
+} // fx_draw::Components
 

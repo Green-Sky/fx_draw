@@ -3,14 +3,14 @@
 #include <glm/vec2.hpp>
 #include <glm/vec4.hpp>
 
-namespace Components::fx_draw {
+namespace fx_draw::Components {
 
-struct fading_filled_circle {
+struct FadingFilledCircle {
 	//glm::vec2 center;
 	float radius = 1.f;
 
 	glm::vec4 color{1,1,1,1};
 };
 
-} // Components::fx_draw
+} // fx_draw::Components
 

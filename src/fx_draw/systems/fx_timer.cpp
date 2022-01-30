@@ -6,10 +6,10 @@
 
 #include <tracy/Tracy.hpp>
 
-namespace Systems::fx_draw {
+namespace fx_draw::Systems {
 
-void FXTimer(MM::Scene& scene, entt::view<entt::get_t<Components::fx_draw::fx_timer>> view, const MM::Components::TimeDelta& td) {
-	ZoneScopedN("Systems::fx_draw::FXTimer");
+void fx_timer(MM::Scene& scene, entt::view<entt::get_t<Components::FXTimer>> view, const MM::Components::TimeDelta& td) {
+	ZoneScopedN("fx_draw::Systems::fx_timer");
 
 	std::vector<entt::entity> to_delete{};
 	view.each([delta = td.tickDelta, &scene, &to_delete](auto e, auto& t) {
@@ -26,5 +26,5 @@ void FXTimer(MM::Scene& scene, entt::view<entt::get_t<Components::fx_draw::fx_ti
 	}
 }
 
-} // Systems::fx_draw
+} // fx_draw::Systems
 
