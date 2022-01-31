@@ -1,6 +1,5 @@
 #include "./fx_renderer.hpp"
 
-#include <SDL2/_real_SDL_config.h>
 #include <mm/fs_const_archiver.hpp>
 #include <mm/opengl/shader.hpp>
 #include <mm/services/opengl_renderer.hpp>
